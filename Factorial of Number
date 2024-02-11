@@ -1,0 +1,32 @@
+#include<iostream>
+using namespace std;    
+int main(){ 
+    int  n; 
+    cin>>n;  
+    if(n<=1){
+        cout<<"1";
+        exit(0);
+    }
+    int cnt=1;
+    while(n!=0){
+    cnt=cnt*n;
+    n--;
+    }
+    cout<<cnt;
+}
+
+Using Recursion
+#include<iostream>
+using namespace std;  
+int fact(int n){   
+    if(n<=1){    
+        return n;
+    }
+    return n*fact(n-1);
+}
+int main(){ 
+    int  n;   
+    cin>>n;      
+    cout<<fact(n);   
+    return 0;
+}
